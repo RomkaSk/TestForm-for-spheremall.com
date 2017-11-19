@@ -32,8 +32,6 @@ class User {
         if(mail($to, $subject, $message, $headers)) {
             return true;
         }
-        
-       
     }
 
     function saveAvatar($file) {
