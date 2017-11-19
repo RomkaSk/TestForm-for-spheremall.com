@@ -1,0 +1,78 @@
+.input-group[class*="col-"] {
+    float: left;
+}
+
+.input-group.col-md-12 {
+    float: none;
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+	margin-top: 6px;
+	padding-top: 14px;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: transparent;
+    color: #9c27b0;
+    display: inline-block;
+    border: 1px solid;
+    padding: 6px;
+}
+ 
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: transparent;
+    border: 1px solid;
+    padding: 6px;
+}
+
+.inputfile + label {
+    cursor: pointer;
+}
+
+.inputfile:focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+ 
+.no-js .inputfile + label {
+    display: none;
+}
+
+.finput-group {
+	padding-top: 18px;
+}
+
+.good-result, .error-result {
+    text-align: center;
+    background-color: rgba(80, 183, 80, 0.68);
+    font-size: 17px;
+    padding: 5px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.error-result {
+    background-color: rgba(183, 80, 80, 0.6);
+}
